@@ -4,9 +4,9 @@
    >Команда: git status
 2. Инициализировал репозиторий.
    >Команда: git init
-3. Создал пустой текстовый файл README.md, в котором будет описание выполненных работ и кода программы Program.cs.
+3. Создал пустой текстовый файл README.md, в котором будет описание выполненных работ и кода проекта.
    >Команда: touch README.md
-4. Открыл файл README.md и внес изменения в него. Далее:
+4. Открыл файл README.md, внес изменения в него и сохранил. Далее:
    * Перенес изменения в индексируемую область.
    >Команда: git add README.md
    * Зафиксировал изменения.
@@ -26,4 +26,15 @@
    >Команда: git add .
    * Зафиксировал изменения.
    >Команда: git commit -m "Folder created Task and project created Task.csproj"
-1. ыввыпвапвап
+7. Работа с проектом Task.csproj:
+
+   7.1. Открыл файл Programs.cs и набрал код для трех методов:
+   * GetNumberOfLines;
+   * GetLinesFromUser;
+   * ColorizeText.
+
+   7.2. Сохранил файл Programs.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: dotnet run  
+   >Команда: git add .  
+   >Команда: git commit -m "Added methods GetNumberOfLines, GetLinesFromUser and ColorizeText to the file Programs.cs"
+8. 

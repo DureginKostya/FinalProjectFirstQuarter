@@ -48,7 +48,7 @@
    >Команда: git add .  
    >Команда: git commit -m "Added method PrintOfArray to the file Programs.cs"
 
-   7.6. Перешел из ветви Print обратно в ветвь Master и убедился в том, что переход осуществлен.
+   7.6. Перешел из ветви Print обратно в ветвь master и убедился в том, что переход осуществлен.
    >Команда: git checkout master
    >Команда: git branch
 
@@ -60,4 +60,10 @@
    7.8. Создал дополнительную ветвь Delete, для работы над удалением строк из массива с длиной более 3 символов, далее перешел в неё и убедился, что переход осуществлен.
    >Команда: git checkout -b Delete
    >Команда: git branch
+
+   7.9. Открыл файл Program.cs и набрал код для метода DeletingLinesFromArray.
+   7.10. Сохранил файл Program.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: dotnet run  
+   >Команда: git add .  
+   >Команда: git commit -m "Added method DeletingLinesFromArray to the file Programs.cs"
 8. 

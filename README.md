@@ -1,5 +1,7 @@
 # Выполненная работа
 
+---
+
 1. Проверил существует или нет репозиторий в папке FirstProjectFirstQuarter.
    >Команда: git status
 2. Инициализировал репозиторий.
@@ -79,4 +81,9 @@
    >Команда: git merge Print
    >Команда: git add .  
    >Команда: git commit -m "Merging two branches Delete and master"
-8. 
+
+   7.14. Программный код проекта проверен на приведенных в задаче примерах. Программа работает штатно.
+8. Создал файл DeletingLines.drawio и оформил в нем блок-схему к основному методу (DeletingLinesFromArray) проекта Task.csproj.Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: git add .  
+   >Команда: git commit -m "File created DeletingLines.drawio"
+9.  

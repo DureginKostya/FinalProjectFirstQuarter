@@ -66,4 +66,17 @@
    >Команда: dotnet run  
    >Команда: git add .  
    >Команда: git commit -m "Added method DeletingLinesFromArray to the file Programs.cs"
+
+   7.11. Дополнил файл README.md и сохранил его. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: git add .  
+   >Команда: git commit -m "Updates file README.md"
+
+   7.12. Перешел из ветви Delete обратно в ветвь master и убедился в том, что переход осуществлен.
+   >Команда: git checkout master
+   >Команда: git branch
+
+   7.13. Осуществил слияние двух ветвей Delete и master. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: git merge Print
+   >Команда: git add .  
+   >Команда: git commit -m "Merging two branches Delete and master"
 8. 

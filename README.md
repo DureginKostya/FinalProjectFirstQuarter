@@ -39,7 +39,7 @@
    >Команда: git commit -m "Added methods GetNumberOfLines, GetLinesFromUser and ColorizeText to the file Programs.cs"
 
    7.3. Создал дополнительную ветвь Print, для работы над выводом массива строк на экран, далее перешел в неё и убедился, что переход осуществлен.
-   >Команда: git checkout -b "Print"
+   >Команда: git checkout -b Print
    >Команда: git branch
 
    7.4. Открыл файл Program.cs и набрал код для метода PrintOfArray.
@@ -56,4 +56,8 @@
    >Команда: git merge Print
    >Команда: git add .  
    >Команда: git commit -m "Merging two branches Print and master"
+
+   7.8. Создал дополнительную ветвь Delete, для работы над удалением строк из массива с длиной более 3 символов, далее перешел в неё и убедился, что переход осуществлен.
+   >Команда: git checkout -b Delete
+   >Команда: git branch
 8. 

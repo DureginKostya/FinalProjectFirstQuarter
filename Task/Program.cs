@@ -24,20 +24,33 @@ int GetNumberOfLines(string message)
 }
 string[] GetLinesFromUser(string message, int value)
 {
-    string[] arrayLines = new string[value];
+    string[] array = new string[value];
     for (int i = 0; i < value; i++)
     {
         ColorizeText(message + $"{i + 1}: ", ConsoleColor.White);
-        arrayLines[i] = Console.ReadLine()!;
+        array[i] = Console.ReadLine()!;
     }
     Console.WriteLine();
-    return arrayLines;
+    return array;
 }
 void ColorizeText(string message, ConsoleColor myColor)
 {
     Console.ForegroundColor = myColor;
     Console.Write(message);
     Console.ResetColor();
+}
+void DeletingLinesFromArray(string[] array, out string[] arrayNew, out int j)
+{
+    arrayNew = new string[array.Length];
+    j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            arrayNew[j] = array[i];
+            j++;
+        }
+    }
 }
 void PrintOfArray(string[] array, string message, int length, ConsoleColor myColor)
 {
@@ -56,3 +69,8 @@ void PrintOfArray(string[] array, string message, int length, ConsoleColor myCol
 int numberOfLines = GetNumberOfLines("Введите количество строк, которое хотите ввести в массив - ");
 string[] linesUser = GetLinesFromUser("Введите строку № ", numberOfLines);
 PrintOfArray(linesUser, "Строковый массив - ", linesUser.Length, ConsoleColor.DarkMagenta);
+ColorizeText("Удаление из строкового массива строк с длиной более 3-х символов.", ConsoleColor.DarkRed);
+Console.WriteLine();
+Console.WriteLine();
+DeletingLinesFromArray(linesUser, out string[] arrayLines, out int arrayLinesLength);
+PrintOfArray(arrayLines, "Обновленный строковый массив - ", arrayLinesLength, ConsoleColor.DarkGreen);

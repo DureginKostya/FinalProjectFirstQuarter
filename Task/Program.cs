@@ -39,5 +39,20 @@ void ColorizeText(string message, ConsoleColor myColor)
     Console.Write(message);
     Console.ResetColor();
 }
+void PrintOfArray(string[] array, string message, int length, ConsoleColor myColor)
+{
+    ColorizeText(message + "[", myColor);
+    for (int i = 0; i < length; i++)
+    {
+        if (i != length - 1)
+            ColorizeText($"\"{array[i]}\", ", myColor);
+        else
+            ColorizeText($"\"{array[i]}\"", myColor);
+    }
+    ColorizeText("]", myColor);
+    Console.WriteLine();
+    Console.WriteLine();
+}
 int numberOfLines = GetNumberOfLines("Введите количество строк, которое хотите ввести в массив - ");
 string[] linesUser = GetLinesFromUser("Введите строку № ", numberOfLines);
+PrintOfArray(linesUser, "Строковый массив - ", linesUser.Length, ConsoleColor.DarkMagenta);

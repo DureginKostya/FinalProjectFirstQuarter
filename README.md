@@ -37,4 +37,13 @@
    >Команда: dotnet run  
    >Команда: git add .  
    >Команда: git commit -m "Added methods GetNumberOfLines, GetLinesFromUser and ColorizeText to the file Programs.cs"
+
+   7.3. Создал дополнительную ветвь Print, для работы над выводом массива строк на экран, далее перешел в неё.
+   >Команда: git checkout -b "Print"
+
+   7.4. Открыл файл Program.cs и набрал код для метода PrintOfArray.
+   7.5. Сохранил файл Program.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: dotnet run  
+   >Команда: git add .  
+   >Команда: git commit -m "Added method PrintOfArray to the file Programs.cs"
 8. 

@@ -38,12 +38,22 @@
    >Команда: git add .  
    >Команда: git commit -m "Added methods GetNumberOfLines, GetLinesFromUser and ColorizeText to the file Programs.cs"
 
-   7.3. Создал дополнительную ветвь Print, для работы над выводом массива строк на экран, далее перешел в неё.
+   7.3. Создал дополнительную ветвь Print, для работы над выводом массива строк на экран, далее перешел в неё и убедился, что переход осуществлен.
    >Команда: git checkout -b "Print"
+   >Команда: git branch
 
    7.4. Открыл файл Program.cs и набрал код для метода PrintOfArray.
    7.5. Сохранил файл Program.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
    >Команда: dotnet run  
    >Команда: git add .  
    >Команда: git commit -m "Added method PrintOfArray to the file Programs.cs"
+
+   7.6. Перешел из ветви Print обратно в ветвь Master и убедился в том, что переход осуществлен.
+   >Команда: git checkout master
+   >Команда: git branch
+
+   7.7. Осуществил слияние двух ветвей Print и master. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: git merge Print
+   >Команда: git add .  
+   >Команда: git commit -m "Merging two branches Print and master"
 8. 

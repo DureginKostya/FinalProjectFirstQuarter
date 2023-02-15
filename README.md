@@ -8,10 +8,8 @@
    >Команда: git init
 3. Создал пустой текстовый файл README.md, в котором будет описание выполненных работ и кода проекта.
    >Команда: touch README.md
-4. Открыл файл README.md, внес изменения в него и сохранил. Далее:
-   * Перенес изменения в индексируемую область.
-   >Команда: git add README.md
-   * Зафиксировал изменения.
+4. Открыл файл README.md, внес изменения в него и сохранил. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+   >Команда: git add README.md  
    >Команда: git commit -m "File created README.md with description"
 5. Создал файл .gitignore зафиксировал изменения в репозитории.
    >Команда: dotnet new gitignore  
@@ -28,12 +26,11 @@
    >Команда: git add .
    * Зафиксировал изменения.
    >Команда: git commit -m "Folder created Task and project created Task.csproj"
-7. Работа с проектом Task.csproj:
-
+7. Работа с проектом Task.csproj:  
    7.1. Открыл файл Programs.cs и набрал код для трех методов:
-   * GetNumberOfLines;
-   * GetLinesFromUser;
-   * ColorizeText.
+      * GetNumberOfLines;
+      * GetLinesFromUser;
+      * ColorizeText.
 
    7.2. Сохранил файл Programs.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
    >Команда: dotnet run  
@@ -41,29 +38,31 @@
    >Команда: git commit -m "Added methods GetNumberOfLines, GetLinesFromUser and ColorizeText to the file Programs.cs"
 
    7.3. Создал дополнительную ветвь Print, для работы над выводом массива строк на экран, далее перешел в неё и убедился, что переход осуществлен.
-   >Команда: git checkout -b Print
+   >Команда: git checkout -b Print  
    >Команда: git branch
 
    7.4. Открыл файл Program.cs и набрал код для метода PrintOfArray.
+
    7.5. Сохранил файл Program.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
    >Команда: dotnet run  
    >Команда: git add .  
    >Команда: git commit -m "Added method PrintOfArray to the file Programs.cs"
 
    7.6. Перешел из ветви Print обратно в ветвь master и убедился в том, что переход осуществлен.
-   >Команда: git checkout master
+   >Команда: git checkout master  
    >Команда: git branch
 
    7.7. Осуществил слияние двух ветвей Print и master. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
-   >Команда: git merge Print
+   >Команда: git merge Print  
    >Команда: git add .  
    >Команда: git commit -m "Merging two branches Print and master"
 
    7.8. Создал дополнительную ветвь Delete, для работы над удалением строк из массива с длиной более 3 символов, далее перешел в неё и убедился, что переход осуществлен.
-   >Команда: git checkout -b Delete
+   >Команда: git checkout -b Delete  
    >Команда: git branch
 
    7.9. Открыл файл Program.cs и набрал код для метода DeletingLinesFromArray.
+
    7.10. Сохранил файл Program.cs и проверил работоспособность кода. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
    >Команда: dotnet run  
    >Команда: git add .  
@@ -74,25 +73,40 @@
    >Команда: git commit -m "Updates file README.md"
 
    7.12. Перешел из ветви Delete обратно в ветвь master и убедился в том, что переход осуществлен.
-   >Команда: git checkout master
+   >Команда: git checkout master  
    >Команда: git branch
 
    7.13. Осуществил слияние двух ветвей Delete и master. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
-   >Команда: git merge Print
+   >Команда: git merge Print  
    >Команда: git add .  
    >Команда: git commit -m "Merging two branches Delete and master"
 
    7.14. Программный код проекта проверен на приведенных в задаче примерах. Программа работает штатно.
+
 8. Создал файл DeletingLines.drawio и оформил в нем блок-схему к основному методу (DeletingLinesFromArray) проекта Task.csproj.Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
    >Команда: git add .  
    >Команда: git commit -m "File created DeletingLines.drawio"
 
 9. Удалил вспомогательные ветви Print и Delete. В начале проверив в какой ветви нахожусь. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
-   >Команда: git branch
-   >Команда: git branch -d Print
-   >Команда: git branch -d Delete
+   >Команда: git branch  
+   >Команда: git branch -d Print  
+   >Команда: git branch -d Delete  
    >Команда: git add .  
    >Команда: git commit -m "Deleting branches Print and Delete"
+
+10. Создал репозиторий **FinalProjectFirstQuarter** на сайте GitHub.com
+
+    >* Нажал на кнопку **<<+>>**, в сплывшем меню выбрал пункт **New repository**  
+    >* В окне **Repository name** ввел имя нового репозитория **FinalProjectFirstQuarter**  
+    >* Нажал на кнопку **Create repository**
+
+11. Открыл файл README.md, внес в него окончательный правки и сохранил. Далее перенес изменения в индексируемую область и зафиксировал изменения репозитория.
+    >Команда: git add .  
+    >Команда: git commit -m "The final version of the README file and sending the repository to Github"
+
+12. Отправил репозиторий с локальной машины на удаленный репозиторий.
+    >Команда: git remote add origin https://GitHub.com/DureginKostya/FinalProjectFirstQuarter.git  
+    >Команда: git push -u master
 
 ---
 ---
